@@ -30,12 +30,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
+import java.util.stream.Collectors;
 import javax.management.MBeanServerConnection;
 import javax.management.ObjectName;
 
 import org.apache.helix.BaseDataAccessor;
 import org.apache.helix.ConfigAccessor;
 import org.apache.helix.HelixAdmin;
+import org.apache.helix.HelixConstants;
 import org.apache.helix.HelixDataAccessor;
 import org.apache.helix.HelixManager;
 import org.apache.helix.HelixProperty;
@@ -445,6 +447,30 @@ public class ZkTestBase {
       is.setPreferenceList(p, preferenceList);
     }
     clusterSetup.getClusterManagementTool().setResourceIdealState(clusterName, dbName, is);
+  }
+
+  protected void createResourceInCustomizedMode(ClusterSetup clusterSetup, String clusterName, String resourceName,
+      Map<Integer, String> partitionInstanceMap) {
+    IdealState idealState = new IdealState(resourceName);
+    idealState.setNumPartitions(partitionInstanceMap.size());
+    idealState.setStateModelDefRef(OnlineOfflineSMD.name);
+    idealState.setRebalanceMode(IdealState.RebalanceMode.CUSTOMIZED);
+    partitionInstanceMap.forEach((partitionID, instanceName) -> {
+      idealState.setPartitionState(resourceName + "_" + partitionID,
+          instanceName, OnlineOfflineSMD.States.ONLINE.toString());
+    });
+    clusterSetup.addResourceToCluster(clusterName, resourceName, idealState);
+  }
+
+  protected void removeResourceFromInstanceCurrentState(MockParticipantManager participant, String resourceName) {
+
+    String sessionId = participant.getZkClient()
+        .getChildren(
+            PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName()))
+        .get(0);
+    participant.getZkClient()
+        .delete(PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName(),
+            sessionId, resourceName));
   }
 
   /**

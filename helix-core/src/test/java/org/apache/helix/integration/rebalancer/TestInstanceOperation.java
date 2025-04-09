@@ -282,6 +282,42 @@ public class TestInstanceOperation extends ZkTestBase {
     Assert.assertEquals(getEVs(), assignment);
 }
 
+  @Test
+  public void testEvacuateWithCustomizedResource() throws Exception {
+    System.out.println("START TestInstanceOperation.testEvacuateWithCustomizedResource() at " + new Date(System.currentTimeMillis()));
+
+    // Add semi-auto DBs
+    String customizedDB = "CustomizedTestDB";
+    Map<Integer, String> partitionInstanceMap = new HashMap<>();
+    partitionInstanceMap.put(Integer.valueOf(0), _participants.get(0).getInstanceName());
+    createResourceInCustomizedMode(_gSetupTool, CLUSTER_NAME, customizedDB, partitionInstanceMap);
+    Assert.assertTrue(_clusterVerifier.verifyByPolling());
+    IdealState is = _gSetupTool.getClusterManagementTool().getResourceIdealState(CLUSTER_NAME, customizedDB);
+    ExternalView ev = _gSetupTool.getClusterManagementTool().getResourceExternalView(CLUSTER_NAME, customizedDB);
+    for (String p : ev.getPartitionSet()) {
+      System.out.println("printing state map" + ev.getStateMap(p));
+    }
+
+    // evacuated instance
+    String instanceToEvacuate = _participants.get(0).getInstanceName();
+    _admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate);
+    _gSetupTool.getClusterManagementTool()
+        .setInstanceOperation(CLUSTER_NAME, instanceToEvacuate, InstanceConstants.InstanceOperation.EVACUATE);
+
+    Assert.assertTrue(_clusterVerifier.verifyByPolling());
+    for (String p : ev.getPartitionSet()) {
+      System.out.println("printing state map" + ev.getStateMap(p));
+    }
+    Assert.assertFalse(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
+
+    // Drop semi-auto DBs
+    _gSetupTool.dropResourceFromCluster(CLUSTER_NAME, customizedDB);
+    Assert.assertTrue(_clusterVerifier.verifyByPolling());
+    removeResourceFromInstanceCurrentState(_participants.get(0), customizedDB);
+    Assert.assertTrue(_clusterVerifier.verifyByPolling());
+    Assert.assertTrue(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
+  }
+
   @Test(dependsOnMethods = "testEvacuate")
   public void testRevertEvacuation() throws Exception {
     System.out.println("START TestInstanceOperation.testRevertEvacuation() at " + new Date(System.currentTimeMillis()));
