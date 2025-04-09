@@ -303,12 +303,12 @@ public class TestInstanceOperation extends ZkTestBase {
     _admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate);
     _gSetupTool.getClusterManagementTool()
         .setInstanceOperation(CLUSTER_NAME, instanceToEvacuate, InstanceConstants.InstanceOperation.EVACUATE);
-
+    Assert.assertFalse(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
     Assert.assertTrue(_clusterVerifier.verifyByPolling());
     for (String p : ev.getPartitionSet()) {
       System.out.println("printing state map" + ev.getStateMap(p));
     }
-    Assert.assertFalse(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
+
 
     // Drop semi-auto DBs
     _gSetupTool.dropResourceFromCluster(CLUSTER_NAME, customizedDB);
