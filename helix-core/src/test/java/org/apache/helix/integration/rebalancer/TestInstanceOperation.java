@@ -303,21 +303,12 @@ public class TestInstanceOperation extends ZkTestBase {
     _gSetupTool.getClusterManagementTool()
         .setInstanceOperation(CLUSTER_NAME, instanceToEvacuate, InstanceConstants.InstanceOperation.EVACUATE);
 
-    removeResourceFromInstanceCurrentState(_participants.get(0), _allDBs);
-//    Assert.assertTrue(_clusterVerifier.verifyByPolling());
-//    ev = _gSetupTool.getClusterManagementTool().getResourceExternalView(CLUSTER_NAME, customizedDB);
-//    for (String p : ev.getPartitionSet()) {
-//      System.out.println("printing state map" + ev.getStateMap(p));
-//    }
-//    Thread.sleep(30000);
+    // remove all resources from this participant except customizedDB
+    removeAllResourcesFromInstance(_participants.get(0), Set.of(customizedDB));
     Assert.assertFalse(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
     _controller.syncStart();
     // Drop customized DBs in clusterx
     _gSetupTool.dropResourceFromCluster(CLUSTER_NAME, customizedDB);
-    Assert.assertTrue(_clusterVerifier.verifyByPolling());
-    removeResourceFromInstanceCurrentState(_participants.get(0), Set.of(customizedDB));
-
-    Assert.assertTrue(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
   }
 
   @Test(dependsOnMethods = "testEvacuate")

@@ -77,6 +77,7 @@ import org.apache.helix.tools.ClusterSetup;
 import org.apache.helix.tools.ClusterStateVerifier;
 import org.apache.helix.tools.StateModelConfigGenerator;
 import org.apache.helix.zookeeper.api.client.HelixZkClient;
+import org.apache.helix.zookeeper.api.client.RealmAwareZkClient;
 import org.apache.helix.zookeeper.datamodel.ZNRecord;
 import org.apache.helix.zookeeper.impl.client.ZkClient;
 import org.apache.helix.zookeeper.impl.factory.DedicatedZkClientFactory;
@@ -462,18 +463,21 @@ public class ZkTestBase {
     clusterSetup.addResourceToCluster(clusterName, resourceName, idealState);
   }
 
-  protected void removeResourceFromInstanceCurrentState(MockParticipantManager participant, Set<String> resourceNames) {
-
-    String sessionId = participant.getZkClient()
-        .getChildren(
-            PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName()))
-        .get(0);
+  protected void removeAllResourcesFromInstance(MockParticipantManager participant, Set<String> excludeResourceNames) {
+    RealmAwareZkClient zkClient = participant.getZkClient();
+    String clusterName = participant.getClusterName();
+    String instanceName = participant.getInstanceName();
+    String sessionId = zkClient.getChildren(PropertyPathBuilder.instanceCurrentState(clusterName, instanceName)).get(0);
+    List<String> resourceNames = zkClient.getChildren(
+        PropertyPathBuilder.instanceCurrentState(clusterName, instanceName, sessionId)
+    );
     for (String resourceName : resourceNames) {
-      participant.getZkClient()
-          .delete(PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName(),
-              sessionId, resourceName));
+      if (!excludeResourceNames.contains(resourceName)) {
+          String resourcePath = PropertyPathBuilder.instanceCurrentState(clusterName,
+              instanceName, sessionId, resourceName);
+          zkClient.delete(resourcePath);
+      }
     }
-
   }
 
   /**
