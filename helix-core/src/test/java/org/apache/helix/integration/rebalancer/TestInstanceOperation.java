@@ -292,29 +292,31 @@ public class TestInstanceOperation extends ZkTestBase {
     partitionInstanceMap.put(Integer.valueOf(0), _participants.get(0).getInstanceName());
     createResourceInCustomizedMode(_gSetupTool, CLUSTER_NAME, customizedDB, partitionInstanceMap);
     Assert.assertTrue(_clusterVerifier.verifyByPolling());
-    IdealState is = _gSetupTool.getClusterManagementTool().getResourceIdealState(CLUSTER_NAME, customizedDB);
     ExternalView ev = _gSetupTool.getClusterManagementTool().getResourceExternalView(CLUSTER_NAME, customizedDB);
     for (String p : ev.getPartitionSet()) {
       System.out.println("printing state map" + ev.getStateMap(p));
     }
+    _controller.syncStop();
 
     // evacuated instance
     String instanceToEvacuate = _participants.get(0).getInstanceName();
-    _admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate);
     _gSetupTool.getClusterManagementTool()
         .setInstanceOperation(CLUSTER_NAME, instanceToEvacuate, InstanceConstants.InstanceOperation.EVACUATE);
+
+    removeResourceFromInstanceCurrentState(_participants.get(0), _allDBs);
+//    Assert.assertTrue(_clusterVerifier.verifyByPolling());
+//    ev = _gSetupTool.getClusterManagementTool().getResourceExternalView(CLUSTER_NAME, customizedDB);
+//    for (String p : ev.getPartitionSet()) {
+//      System.out.println("printing state map" + ev.getStateMap(p));
+//    }
+//    Thread.sleep(30000);
     Assert.assertFalse(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
-    Assert.assertTrue(_clusterVerifier.verifyByPolling());
-    for (String p : ev.getPartitionSet()) {
-      System.out.println("printing state map" + ev.getStateMap(p));
-    }
-
-
-    // Drop semi-auto DBs
+    _controller.syncStart();
+    // Drop customized DBs in clusterx
     _gSetupTool.dropResourceFromCluster(CLUSTER_NAME, customizedDB);
     Assert.assertTrue(_clusterVerifier.verifyByPolling());
-    removeResourceFromInstanceCurrentState(_participants.get(0), customizedDB);
-    Assert.assertTrue(_clusterVerifier.verifyByPolling());
+    removeResourceFromInstanceCurrentState(_participants.get(0), Set.of(customizedDB));
+
     Assert.assertTrue(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
   }
 

@@ -462,15 +462,18 @@ public class ZkTestBase {
     clusterSetup.addResourceToCluster(clusterName, resourceName, idealState);
   }
 
-  protected void removeResourceFromInstanceCurrentState(MockParticipantManager participant, String resourceName) {
+  protected void removeResourceFromInstanceCurrentState(MockParticipantManager participant, Set<String> resourceNames) {
 
     String sessionId = participant.getZkClient()
         .getChildren(
             PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName()))
         .get(0);
-    participant.getZkClient()
-        .delete(PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName(),
-            sessionId, resourceName));
+    for (String resourceName : resourceNames) {
+      participant.getZkClient()
+          .delete(PropertyPathBuilder.instanceCurrentState(participant.getClusterName(), participant.getInstanceName(),
+              sessionId, resourceName));
+    }
+
   }
 
   /**
