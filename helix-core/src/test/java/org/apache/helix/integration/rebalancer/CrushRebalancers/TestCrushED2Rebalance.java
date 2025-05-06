@@ -18,7 +18,6 @@ import org.apache.helix.model.ClusterConfig;
 import org.apache.helix.model.ExternalView;
 import org.apache.helix.model.InstanceConfig;
 import org.apache.helix.tools.ClusterVerifiers.BestPossibleExternalViewVerifier;
-import org.apache.helix.tools.ClusterVerifiers.StrictMatchExternalViewVerifier;
 import org.apache.helix.tools.ClusterVerifiers.ZkHelixClusterVerifier;
 import org.apache.helix.zookeeper.datamodel.ZNRecord;
 import org.testng.Assert;
@@ -139,12 +138,16 @@ public class TestCrushED2Rebalance extends ZkTestBase {
     _controller.syncStart();
     Assert.assertTrue(_clusterVerifier.verifyByPolling());
     validateAssignment(0.3);
-    _controller.syncStop();
+    // Put the cluster in maintenance mode.
+    _gSetupTool.getClusterManagementTool()
+        .manuallyEnableMaintenanceMode(CLUSTER_NAME, true, null, null);
     updateEvenZoneToInstanceMap();
     updateInstanceConfigs();
-    _controller.syncStart();
+    // Exit the cluster in maintenance mode.
+    _gSetupTool.getClusterManagementTool()
+        .manuallyEnableMaintenanceMode(CLUSTER_NAME, false, null, null);
     Assert.assertTrue(_clusterVerifier.verifyByPolling());
-    validateAssignment(0.3);
+    validateAssignment(0.1);
   }
 
   private void updateSkewedZoneToInstanceMap() {
@@ -198,7 +201,6 @@ public class TestCrushED2Rebalance extends ZkTestBase {
         Double skew = stats.get(1);
         Assert.assertTrue(skew >= (1.0 - threshold) && skew <= (1.0 + threshold));
       });
-      System.out.println("resource: " + resource + " " + avgPartitionsByZoneType);
     }
   }
 
