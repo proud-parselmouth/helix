@@ -9,7 +9,9 @@ import java.util.Map;
 import org.apache.helix.controller.rebalancer.topology.Node;
 import org.apache.helix.util.JenkinsHash;
 
-
+/**
+ * Selection algorithm based on the "straw" bucket type as described in the CRUSH algorithm.
+ */
 class StrawSelector implements Selector {
 
   private final Map<Node,Long> straws = new HashMap<Node,Long>();

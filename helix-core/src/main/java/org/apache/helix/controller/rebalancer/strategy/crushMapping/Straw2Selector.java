@@ -4,11 +4,13 @@ import java.util.List;
 import org.apache.helix.controller.rebalancer.topology.Node;
 import org.apache.helix.util.JenkinsHash;
 
-
+/**
+ * Selection algorithm based on the "straw2" bucket type as described https://www.spinics.net/lists/ceph-devel/msg21635.html.
+ */
 class Straw2Selector implements Selector {
 
   private final List<Node> nodes;
-  private final JenkinsHash hashFunction;
+  private final JenkinsHash hashFunction; 
 
   Straw2Selector(Node node) {
     nodes = node.getChildren();
