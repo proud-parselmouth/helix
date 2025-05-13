@@ -18,12 +18,16 @@ package org.apache.helix.controller.rebalancer.strategy;
  * specific language governing permissions and limitations
  * under the License.
  */
+
+import org.apache.helix.controller.rebalancer.strategy.crushMapping.Selector;
+
+
 /**
   Extension on CrushED Rebalance strategy. Provides even partition distribution also in cases where
  there is a skewed mapping of maintenance zone to instances.
  */
 public class CrushEd2RebalanceStrategy extends CrushEdRebalanceStrategy {
   public CrushEd2RebalanceStrategy() {
-    _baseStrategy = new CrushRebalanceStrategy(true);
+    _baseStrategy = new CrushRebalanceStrategy(Selector.StrawBucket.STRAW2);
   }
 }

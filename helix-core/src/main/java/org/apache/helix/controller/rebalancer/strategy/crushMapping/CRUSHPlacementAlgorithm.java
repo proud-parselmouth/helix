@@ -53,7 +53,7 @@ public class CRUSHPlacementAlgorithm {
 
   private final boolean keepOffset;
   private final Map<Long,Integer> roundOffset;
-  private final boolean useStraw2;
+  private final Selector.StrawBucket strawBucket;
 
   /**
    * Creates the crush placement object.
@@ -67,13 +67,17 @@ public class CRUSHPlacementAlgorithm {
    * kept for the duration of this object for successive selection of the same input.
    */
   public CRUSHPlacementAlgorithm(boolean keepOffset) {
-    this(keepOffset, false);
+    this(keepOffset, Selector.StrawBucket.STRAW);
   }
 
-  public CRUSHPlacementAlgorithm(boolean keepOffset, boolean useStraw2) {
+  public CRUSHPlacementAlgorithm(Selector.StrawBucket strawBucket) {
+    this(false, strawBucket);
+  }
+
+  public CRUSHPlacementAlgorithm(boolean keepOffset, Selector.StrawBucket strawBucket) {
     this.keepOffset = keepOffset;
     roundOffset = keepOffset ? new HashMap<Long,Integer>() : null;
-    this.useStraw2 = useStraw2;
+    this.strawBucket = strawBucket;
   }
 
   /**
@@ -125,7 +129,7 @@ public class CRUSHPlacementAlgorithm {
           retryNode = false; // initialize at the outset
           rPrime = r + offset + failure;
           logger.trace("{}.select({}, {})", new Object[] {in, input, rPrime});
-          Selector selector = SelectorFactory.createSelector(in, useStraw2);
+          Selector selector = SelectorFactory.createSelector(in, strawBucket);
           out = selector.select(input, rPrime);
           if (!out.getType().equalsIgnoreCase(type)) {
             logger.trace("selected output {} for data {} didn't match the type {}: walking down " +

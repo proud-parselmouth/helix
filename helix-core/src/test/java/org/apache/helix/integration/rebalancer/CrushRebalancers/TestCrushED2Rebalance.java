@@ -131,6 +131,11 @@ public class TestCrushED2Rebalance extends ZkTestBase {
     System.out.println("END " + CLASS_NAME + " at " + new Date(System.currentTimeMillis()));
   }
 
+  /***
+   TestCrushED2RebalanceAssignments tests that CRUSHED2 rebalance strategy distributes
+   partitions almost evenly in cases of skewed topology (uneven mz -> instance count mapping) and
+   even topology.
+   */
   @Test
   public void TestCrushED2RebalanceAssignments(){
     updateSkewedZoneToInstanceMap();

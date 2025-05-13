@@ -5,8 +5,8 @@ import org.apache.helix.controller.rebalancer.topology.Node;
 
 class SelectorFactory {
 
-  static Selector createSelector(Node node, boolean useStraw2) {
-    if (useStraw2) {
+  static Selector createSelector(Node node, Selector.StrawBucket strawBucket) {
+    if (strawBucket == Selector.StrawBucket.STRAW2) {
       return new Straw2Selector(node);
     }
     return new StrawSelector(node);

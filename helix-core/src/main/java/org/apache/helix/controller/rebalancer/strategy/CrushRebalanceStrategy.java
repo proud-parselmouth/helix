@@ -30,6 +30,7 @@ import java.util.Set;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import org.apache.helix.HelixException;
+import org.apache.helix.controller.rebalancer.strategy.crushMapping.Selector;
 import org.apache.helix.zookeeper.datamodel.ZNRecord;
 import org.apache.helix.controller.LogUtil;
 import org.apache.helix.controller.dataproviders.ResourceControllerDataProvider;
@@ -61,11 +62,11 @@ public class CrushRebalanceStrategy implements RebalanceStrategy<ResourceControl
   private CRUSHPlacementAlgorithm placementAlgorithm;
 
   public CrushRebalanceStrategy() {
-    this(false);
+    this(Selector.StrawBucket.STRAW);
   }
 
-  public CrushRebalanceStrategy(boolean useStraw2) {
-    placementAlgorithm = new CRUSHPlacementAlgorithm(false, useStraw2);
+  public CrushRebalanceStrategy(Selector.StrawBucket strawBucket) {
+    placementAlgorithm = new CRUSHPlacementAlgorithm(strawBucket);
   }
 
   @Override

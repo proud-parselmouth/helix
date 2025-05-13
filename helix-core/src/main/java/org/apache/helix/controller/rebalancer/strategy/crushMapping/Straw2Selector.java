@@ -9,18 +9,18 @@ import org.apache.helix.util.JenkinsHash;
  */
 class Straw2Selector implements Selector {
 
-  private final List<Node> nodes;
-  private final JenkinsHash hashFunction; 
+  private final List<Node> _nodes;
+  private final JenkinsHash _hashFunction;
 
   Straw2Selector(Node node) {
-    nodes = node.getChildren();
-    hashFunction = new JenkinsHash();
+    _nodes = node.getChildren();
+    _hashFunction = new JenkinsHash();
   }
 
   public Node select(long input, long round) {
     Node selected = null;
     double hiScore = -1;
-    for (Node child : nodes) {
+    for (Node child : _nodes) {
       double score = weightedScore(child, input, round);
       if (score > hiScore) {
         selected = child;
@@ -31,9 +31,12 @@ class Straw2Selector implements Selector {
   }
 
   private double weightedScore(Node child, long input, long round) {
-    long hash = hashFunction.hash(input, child.getId(), round);
+    long hash = _hashFunction.hash(input, child.getId(), round);
     hash = hash&0xffff;
-    return Math.log(hash/65536d) / child.getWeight();
+    if (child.getWeight() > 0) {
+      return Math.log(hash/65536d) / child.getWeight();
+    }
+    return 0.0;
   }
 }
 

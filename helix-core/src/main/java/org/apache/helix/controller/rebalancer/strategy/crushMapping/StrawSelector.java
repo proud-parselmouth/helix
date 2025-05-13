@@ -14,8 +14,8 @@ import org.apache.helix.util.JenkinsHash;
  */
 class StrawSelector implements Selector {
 
-  private final Map<Node,Long> straws = new HashMap<Node,Long>();
-  private final JenkinsHash hashFunction;
+  private final Map<Node,Long> _straws = new HashMap<Node,Long>();
+  private final JenkinsHash _hashFunction;
 
   StrawSelector(Node node) {
     if (!node.isLeaf()) {
@@ -31,11 +31,11 @@ class StrawSelector implements Selector {
       while (i < length) {
         Node current = sortedNodes.get(i);
         if (current.getWeight() == 0) {
-          straws.put(current, 0L);
+          _straws.put(current, 0L);
           i++;
           continue;
         }
-        straws.put(current, (long)(straw*0x10000));
+        _straws.put(current, (long)(straw*0x10000));
         i++;
         if (i == length) {
           break;
@@ -60,7 +60,7 @@ class StrawSelector implements Selector {
         lastw = previous.getWeight();
       }
     }
-    hashFunction = new JenkinsHash();
+    _hashFunction = new JenkinsHash();
   }
 
   /**
@@ -90,7 +90,7 @@ class StrawSelector implements Selector {
   public Node select(long input, long round) {
     Node selected = null;
     long hiScore = -1;
-    for (Map.Entry<Node,Long> e: straws.entrySet()) {
+    for (Map.Entry<Node,Long> e: _straws.entrySet()) {
       Node child = e.getKey();
       long straw = e.getValue();
       long score = weightedScore(child, straw, input, round);
@@ -106,7 +106,7 @@ class StrawSelector implements Selector {
   }
 
   private long weightedScore(Node child, long straw, long input, long round) {
-    long hash = hashFunction.hash(input, child.getId(), round);
+    long hash = _hashFunction.hash(input, child.getId(), round);
     hash = hash&0xffff;
     long weightedScore = hash*straw;
     return weightedScore;
