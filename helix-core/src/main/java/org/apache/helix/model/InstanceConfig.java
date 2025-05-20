@@ -361,7 +361,7 @@ public class InstanceConfig extends HelixProperty {
   }
 
   public void setWeight(int weight) {
-    if (weight <= 0) {
+    if (weight < 0) {
       throw new IllegalArgumentException("Instance weight can not be equal or less than 0!");
     }
     _record.setSimpleField(InstanceConfigProperty.INSTANCE_WEIGHT.name(), String.valueOf(weight));

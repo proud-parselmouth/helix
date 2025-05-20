@@ -560,6 +560,15 @@ public interface HelixAdmin {
   ExternalView getResourceExternalView(String clusterName, String resourceName);
 
   /**
+   * Get external view for a resource from current state
+   * @param clusterName
+   * @param resourceName
+   * @param instances
+   * @return ExternalView for the resource
+   */
+  ExternalView getResourceEVFromCurrentState(String clusterName, String resourceName, List<String> instances);
+
+  /**
    * Get customized view for a resource
    * @param clusterName
    * @param resourceName

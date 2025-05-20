@@ -51,6 +51,7 @@ import org.apache.helix.HelixConstants;
 import org.apache.helix.HelixDataAccessor;
 import org.apache.helix.HelixDefinedState;
 import org.apache.helix.HelixException;
+import org.apache.helix.HelixProperty;
 import org.apache.helix.InstanceType;
 import org.apache.helix.PropertyKey;
 import org.apache.helix.PropertyPathBuilder;
@@ -1676,6 +1677,35 @@ public class ZKHelixAdmin implements HelixAdmin {
     HelixDataAccessor accessor = new ZKHelixDataAccessor(clusterName, _baseDataAccessor);
     PropertyKey.Builder keyBuilder = accessor.keyBuilder();
     return accessor.getProperty(keyBuilder.externalView(resourceName));
+  }
+
+  @Override
+  public ExternalView getResourceEVFromCurrentState(String clusterName, String resourceName, List<String> instances) {
+    HelixDataAccessor accessor = new ZKHelixDataAccessor(clusterName, _baseDataAccessor);
+    PropertyKey.Builder keyBuilder = accessor.keyBuilder();
+    BaseDataAccessor<ZNRecord> baseAccessor = _baseDataAccessor;
+    ExternalView ev = new ExternalView(resourceName);
+    for (String instanceName : instances) {
+      // count number of sessions under CurrentState folder. If it is carrying over from prv session,
+      // then there are > 1 session ZNodes.
+      List<String> sessions = baseAccessor.getChildNames(PropertyPathBuilder.instanceCurrentState(clusterName, instanceName), 0);
+      if(sessions.isEmpty()) {
+        logger.info("no session for instance" + instanceName);
+        continue;
+      }
+      String sessionId = sessions.get(0);
+      HelixProperty prop = accessor.getProperty(keyBuilder.currentState(instanceName, sessionId, resourceName));
+      if(prop == null) {
+        continue;
+      }
+      ZNRecord currentState = prop.getRecord();
+      for (Map.Entry<String, Map<String, String>> entry : currentState.getMapFields().entrySet()) {
+        String partition = entry.getKey();
+        String state = entry.getValue().get("CURRENT_STATE");
+        ev.setState(partition, instanceName, state);
+      }
+    }
+    return ev;
   }
 
   @Override

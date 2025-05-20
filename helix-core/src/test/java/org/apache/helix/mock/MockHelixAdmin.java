@@ -82,6 +82,11 @@ public class MockHelixAdmin implements HelixAdmin {
     return null;
   }
 
+  @Override
+  public ExternalView getResourceEVFromCurrentState(String clusterName, String resourceName, List<String> instances) {
+    return null;
+  }
+
   @Override public List<String> getResourcesInClusterWithTag(String clusterName, String tag) {
     return null;
   }

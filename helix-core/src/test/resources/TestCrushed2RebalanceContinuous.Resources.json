@@ -1,0 +1,2291 @@
+[
+  {
+    "id": "venice_system_store_davinci_push_status_store_eAffinityV2-features-SMT3_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "kNearestNeighborCandidates_v371",
+    "NUM_PARTITIONS": "1200",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_FeedSocialThreadCounts_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "kNearestNeighborCandidates_v372",
+    "NUM_PARTITIONS": "1200",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PFLlsSeatholderDetail_v6225",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PFLlsSeatholderDetail_v6226",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MonarchCustomerIsActive_v1084",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "Test_Store_Migration_Demo2_v1",
+    "NUM_PARTITIONS": "200",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MonarchCustomerIsActive_v1085",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Url_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_SalesAlertInsights_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_heartbeat_hybrid_venice-2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_query-doctype-clickDistribution_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "TnsInvestigationAbuseGraph_v10129",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StorylineDirectoryNodes_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Tier_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "EmployeeMilestonesMemberLookup_v3469",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CmPromotions_v1685",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "EmployeeMilestonesMemberLookup_v3468",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "TnsInvestigationAbuseGraph_v10130",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CmPromotions_v1684",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_HB_VPJtarget_prod-venice-2_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "jobs-p4p-view-prediction_v1221",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Relationship_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_participant_store_cluster_venice-2_v17",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedEntityFeatureStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_LssCrmAccountMatchReportSummary_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_WeeklySearchAppearances_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_RecruiterSearchEngagementEmails_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_HB_VPJtarget_prod-venice-2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_PFLlsSeatholderDetail_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_ContentSearchDocEmbedding_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_SponsoredUpdateClickFeature_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StylizedGeoNamesBeta_v33",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_CustomerMasterCompanySegment_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "EventRecommendations_v142",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "ScheduledLiveSubscriberBucketStore_v544",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_DenseCareersJobEmbeddings_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "UserFlaggedSimilarCreatives_v20280",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Product_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "UserFlaggedSimilarCreatives_v20281",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_LatentPreference_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "ScheduledLiveSubscriberBucketStore_v543",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "EmployeeMilestonesSuggestions_v3736",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "EmployeeMilestonesSuggestions_v3735",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_scinTalentleadCoefficients_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_kNearestNeighborCandidates_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_learning_annotation_ranking_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MultitaskEmbedding-PeopleSearchCareers-Member_v5",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CompanyTitleEmbeddingsV2_v10",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_CompanyTitleEmbeddingsV2_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_PEmployees_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_knn_graph_embedding_feature_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_companyResponseRates_v1_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "learning_content_recommendations_v1864",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_learning_annotation_ranking_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_FeedMemberPageAffinityTensorStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "learning_content_recommendations_v1865",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CensusCohortActorTensorStore_v1660",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "companyInMailCounts_v2_v1678",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "companyInMailCounts_v2_v1677",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "learning_compact_recs_v2594",
+    "NUM_PARTITIONS": "1200",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_MultitaskEmbedding-RecruiterSearch-Entity_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MemberQualityFeatures_v1711",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_TnsInvestigationAbuseGraph_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_MonarchCustomerIsActive_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_TnsInvestigationMemberRestrictionStatus_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "paymentid-feature_v1883",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_MemberStartTimeAtCurrentCompany_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "paymentid-feature_v1882",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Geo_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_companyInMailCounts_v2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lynda_jobs_annotated_recommendations_v2469",
+    "NUM_PARTITIONS": "64",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_LSSContextualLeadRecommendationsQueryStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_TalentintelAutomatedInsightsMetadata_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_NamePopularityRank_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_SponsoredUpdateClickFeature_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_companyInMailCounts_v2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_TnsInvestigationAbuseGraph_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "unfollow_recs_categorized_v2749",
+    "NUM_PARTITIONS": "64",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "unfollow_recs_categorized_v2748",
+    "NUM_PARTITIONS": "64",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_kNearestNeighborCandidates_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "messengerConnectionAffinityGraph_v1225",
+    "NUM_PARTITIONS": "60",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_FeedSocialThreadCounts_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Product_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lynda_jobs_annotated_recommendations_v2470",
+    "NUM_PARTITIONS": "64",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SalesAlertInsights_v1684",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SalesAlertInsights_v1683",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_MultitaskEmbedding-RecruiterSearch-Entity_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CompanyQualityFeatures_v626",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_ScheduledLiveSubscriberBucketStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedBingGeoBeta_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_lynda_jobs_annotated_recommendations_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_lynda_recs_course_to_course_v2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_lsiGlobalOrganizationMetricsVeniceStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MonarchLtsAeLtv_v1531",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "ldapToEmployeeId_v504",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_CompanyQualityFeatures_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Status_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_articlces_by_publisher_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_jobs-p4p-cpa-ratecard_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lynda_recs_course_to_course_v2_v2105",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_unfollow_recs_categorized_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "heartbeat_inc_push_venice-2_v1023",
+    "NUM_PARTITIONS": "50",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_AdsNearlineCoefficients2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_media-reputation_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "heartbeat_inc_push_venice-2_v1024",
+    "NUM_PARTITIONS": "50",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_PulseDirectoryNodes_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_ldapToEmployeeId_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Status_All_v1646",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_Test_Store_Migration_Versions_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_similar_recruiters_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_NamePopularityRank_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_AssessmentDerivedMetricsV2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_Test_Store_Migration_Demo2_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "media-reputation_v2706",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "LSSContextualLeadRecommendationsQueryStore_v1050",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_AssessmentDerivedMetricsV2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "LSSContextualLeadRecommendationsQueryStore_v1051",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_lssSearcherPositiveActionsWitEmbeddingMeanTitle_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Industry_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Industry_All_v1647",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_TaxonomyHierarchy_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedEntityFeatureStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_CustomerMasterCompanySegment_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "knn_graph_embedding_feature_v3",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Status_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_EmployeeMilestonesSuggestions_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "TalentintelAutomatedInsightsMetadata_v1167",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MultitaskEmbedding-RecruiterSearch-Entity_v4",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_PhrasePopularity_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_content_to_skill_mapping_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_organization_landing_page_metrics_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_DenseCareersJobEmbeddings_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StylizedGeoNamesV1_2_v39",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "heartbeat_hybrid_venice-2_v7037",
+    "NUM_PARTITIONS": "100",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "heartbeat_hybrid_venice-2_v7038",
+    "NUM_PARTITIONS": "100",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_advertiser-reputation_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Relationship_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "content_to_skill_mapping_v1745",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "content_to_skill_mapping_v1746",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_LSSContextualLeadRecommendationsQueryStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_job-budgetgroup-projected-spend_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_ScheduledLiveSubscriberBucketStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_Test_Store_Migration_Demo2_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_SalesAlertInsights_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_TaxonomyHierarchy_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SkillAssessmentPracticeAssessment_v1365",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_lynda_recs_course_to_course_v2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lynda_recs_course_to_course_v2_v2104",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "FeedPageTensorFeatureStore_v1738",
+    "NUM_PARTITIONS": "100",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_LithographAuditingData_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_HashtagRelatedTopActivities_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "FeedPageTensorFeatureStore_v1737",
+    "NUM_PARTITIONS": "100",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedBingGeoBeta_v28",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StorylineDirectoryNodes_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_advertiser-reputation_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_CareersJobEmbeddingsV2_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "FeedMemberPageAffinityTensorStore_v1681",
+    "NUM_PARTITIONS": "150",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_TopicStats_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "FeedMemberPageAffinityTensorStore_v1680",
+    "NUM_PARTITIONS": "150",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_contractCompanyMapping_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_crmAccountLineOfBusinessLevelAggregates_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "companyResponseRates_v1_v1210",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_EmployeeMilestonesMemberLookup_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_jobs-p4p-view-prediction_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_lssSearcherPositiveActionsWitEmbeddingMeanTitle_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_paymentid-feature_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "contractCompanyMapping_v1760",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "contractCompanyMapping_v1761",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_SalesInsightEntities_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_MemberQualityFeatures_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_nac_member_profile_v1_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_SkillAssessmentPracticeAssessment_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_jobs-p4p-view-prediction_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "TaxonomyHierarchy_v3",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_ConversationFeatures_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StylizedGeoNamesV1_2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "RecruiterSearchEngagementEmails_v250",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedBingGeoBeta_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_messengerConnectionAffinityGraph_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_learning_content_recommendations_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_LssCrmAccountMatchReportSummary_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_EmployeeMilestonesMemberLookup_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_ContentSearchDocEmbedding_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_learning_learner_to_impression_states_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "MemberStartTimeAtCurrentCompany_v1721",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_learning_compact_recs_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_organization_landing_page_metrics_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_ConversationFeatures_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SalesInsightEntities_v1676",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SalesInsightEntities_v1677",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CustomerMasterCompanySegment_v6844",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_job-budgetgroup-projected-spend_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_MultitaskEmbedding-PeopleSearchCareers-Member_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "RecruiterSearchEngagementEmails_v249",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_PulseDirectoryNodes_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SalaryDirectoryNodes_v584",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_SalaryDirectoryNodes_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_LatentPreference_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_CmPromotions_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Product_All_v1654",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CustomerMasterCompanySegment_v6845",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_MonarchLtsAeLtv_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_EverestMigrationContractConsistency_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_jobs-p4p-cpa-ratecard_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedBingGeoV1_2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_TalentintelAutomatedInsightsMetadata_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_PhrasePopularity_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_FeedMemberPageAffinityTensorStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_Test_Store_Migration_Versions_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_SalaryDirectoryNodes_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "AssessmentDerivedMetricsV2_v993",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "sfdcOpportunityLineMapping_v1242",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_UserFlaggedSimilarCreatives_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StylizedGeoNamesBeta_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_content_to_skill_mapping_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_SalesInsightEntities_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_sfdcOpportunityLineMapping_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_CensusCohortActorTensorStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_UserFlaggedSimilarCreatives_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_MultitaskEmbedding-PeopleSearchCareers-Member_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_HashtagRelatedTopActivities_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_lynda_jobs_annotated_recommendations_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_MonarchCustomerIsActive_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_MonarchLtsAeLtv_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_EmployeeMilestonesSuggestions_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_sfdcOpportunityLineMapping_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_similar_recruiters_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StylizedGeoNamesV1_2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_query-doctype-clickDistribution_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_EmbedInDomainModels_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_CensusCohortActorTensorStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_heartbeat_hybrid_venice-2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "ConversationFeatures_v124",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Geo_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "eAffinityV2-features-SMT3_v237",
+    "NUM_PARTITIONS": "600",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "pacingForecastsV2_v1416",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "WeeklySearchAppearances_v418",
+    "NUM_PARTITIONS": "64",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "WeeklySearchAppearances_v419",
+    "NUM_PARTITIONS": "64",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "pacingForecastsV2_v1417",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "FeedSocialThreadCounts_v214",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "Test_Store_Migration_Versions_v2",
+    "NUM_PARTITIONS": "200",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_PFLlsSeatholderDetail_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedEntityFeatureStore_v259",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_TopicStats_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lsiGlobalOrganizationMetricsVeniceStore_v1565",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_unfollow_recs_categorized_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_messengerConnectionAffinityGraph_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_CompanyQualityFeatures_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_AdsNearlineCoefficients2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_EverestMigrationContractConsistency_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "ContentSearchDocEmbedding_v48",
+    "NUM_PARTITIONS": "300",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Tier_All_v1593",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "LssCrmAccountMatchReportSummary_v1515",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedEntityFeatureStore_v260",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_pacingForecastsV2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_SkillAssessmentPracticeAssessment_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_articlces_by_publisher_v2",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_WeeklySearchAppearances_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_PEmployees_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "advertiser-reputation_v111",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Geo_All_v1806",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Geo_All_v1807",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_lsiGlobalOrganizationMetricsVeniceStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "learning_learner_to_impression_states_v213",
+    "NUM_PARTITIONS": "300",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "learning_learner_to_impression_states_v214",
+    "NUM_PARTITIONS": "300",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_FeedPageTensorFeatureStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_learning_learner_to_impression_states_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "TnsInvestigationMemberRestrictionStatus_v4",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_nac_member_profile_v1_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StandardizedOrganization_Offline_Industry_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_crmAccountLineOfBusinessLevelAggregates_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_media-reputation_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "SponsoredUpdateClickFeature_v1698",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "nac_member_profile_v1_v2",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_scinTalentleadCoefficients_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_learning_compact_recs_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PhrasePopularity_v17",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_FeedPageTensorFeatureStore_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Relationship_All_v1538",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PulseDirectoryNodes_v1923",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_heartbeat_inc_push_venice-2_v5",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedOrganization_Offline_Url_All_v1644",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PulseDirectoryNodes_v1924",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_StylizedGeoNamesBeta_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_ldapToEmployeeId_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "query-doctype-clickDistribution_v1662",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_MemberQualityFeatures_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "query-doctype-clickDistribution_v1661",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_EmbedInDomainModels_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_contractCompanyMapping_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_CompanyTitleEmbeddingsV2_v5",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_RecruiterSearchEngagementEmails_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lssSearcherPositiveActionsWitEmbeddingMeanTitle_v1604",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "EmbedInDomainModels_v16",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_heartbeat_inc_push_venice-2_v5",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "lssSearcherPositiveActionsWitEmbeddingMeanTitle_v1603",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Url_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_EventRecommendations_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StandardizedBingGeoV1_2_v35",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "DenseCareersJobEmbeddings_v337",
+    "NUM_PARTITIONS": "16",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_TnsInvestigationMemberRestrictionStatus_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "CareersJobEmbeddingsV2_v100",
+    "NUM_PARTITIONS": "16",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_MemberStartTimeAtCurrentCompany_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedBingGeoV1_2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_companyResponseRates_v1_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StorylineDirectoryNodes_v1717",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_paymentid-feature_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_EventRecommendations_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_eAffinityV2-features-SMT3_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_LithographAuditingData_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "HB_VPJtarget_prod-venice-2_v64729",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_StandardizedOrganization_Offline_Tier_All_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PEmployees_v1684",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "PEmployees_v1685",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_CmPromotions_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "HB_VPJtarget_prod-venice-2_v64730",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_pacingForecastsV2_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_davinci_push_status_store_CareersJobEmbeddingsV2_v4",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_learning_content_recommendations_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "venice_system_store_meta_store_knn_graph_embedding_feature_v3",
+    "NUM_PARTITIONS": "1",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "crmAccountLineOfBusinessLevelAggregates_v1440",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "NamePopularityRank_v293",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "StorylineDirectoryNodes_v1716",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "crmAccountLineOfBusinessLevelAggregates_v1441",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  },
+  {
+    "id": "NamePopularityRank_v292",
+    "NUM_PARTITIONS": "20",
+    "STATE_MODEL_DEF_REF": "LeaderStandby",
+    "REPLICAS": "3",
+    "MIN_ACTIVE_REPLICAS": "2"
+  }
+]
