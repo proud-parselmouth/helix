@@ -348,6 +348,7 @@ public class TestInstanceOperation extends ZkTestBase {
     partitionInstanceMap.put(Integer.valueOf(1), _participants.get(1).getInstanceName());
     IdealState newIdealState = createCustomizedResourceIdealState(customizedDB, partitionInstanceMap);
     _gSetupTool.getClusterManagementTool().setResourceIdealState(CLUSTER_NAME, customizedDB, newIdealState);
+    Assert.assertTrue(_clusterVerifier.verifyByPolling());
     Assert.assertTrue(_admin.isEvacuateFinished(CLUSTER_NAME, instanceToEvacuate));
     // Drop customized DBs in clusterx
     _gSetupTool.dropResourceFromCluster(CLUSTER_NAME, customizedDB);

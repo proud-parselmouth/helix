@@ -776,11 +776,6 @@ public class ZKHelixAdmin implements HelixAdmin {
 
     // check the instance is alive
     LiveInstance liveInstance = accessor.getProperty(keyBuilder.liveInstance(instanceName));
-//    if (liveInstance == null) {
-//      logger.warn("Instance {} in cluster {} is not alive. The instance can be removed anyway.", instanceName,
-//          clusterName);
-//      return false;
-//    }
 
     BaseDataAccessor<ZNRecord> baseAccessor = _baseDataAccessor;
     // count number of sessions under CurrentState folder. If it is carrying over from prv session,
@@ -804,7 +799,7 @@ public class ZKHelixAdmin implements HelixAdmin {
           instanceName, clusterName);
       return false;
     }
-    // Get set of FULL_AUTO and CUSTOMIZED resources
+
     List<IdealState> idealStates = accessor.getChildValues(keyBuilder.idealStates(), true);
     if (liveInstance == null) {
       return !areResourcesMigrated(currentStates, idealStates, instanceName, RebalanceMode.CUSTOMIZED);
@@ -816,6 +811,7 @@ public class ZKHelixAdmin implements HelixAdmin {
       logger.warn("Instance {} in cluster {} has pending messages.", instanceName, clusterName);
       return true;
     }
+    // Get set of FULL_AUTO and CUSTOMIZED resources
     Set<String> resources = idealStates != null ? idealStates.stream()
         .filter(idealState -> idealState.getRebalanceMode() == RebalanceMode.FULL_AUTO ||
             idealState.getRebalanceMode() == RebalanceMode.CUSTOMIZED)
