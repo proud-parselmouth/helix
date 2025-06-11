@@ -825,7 +825,8 @@ public class ZKHelixAdmin implements HelixAdmin {
    * RebalanceMode matches the specified {@link  RebalanceMode}, every partition is now assigned
    * to a different instance (i.e., not instanceName) in the IdealState.
    *
-   * @param currentStates  list of CurrentState objects representing the current assignment of resources
+   * @param currentStates  list of CurrentState objects of instanceName representing the current assignment of
+   *                       resources on the instance
    * @param idealStates    list of IdealState objects representing the desired assignment of resources
    * @param instanceName   the instance from which resources are migrated
    * @param rebalanceMode  the rebalance mode to match in IdealState
