@@ -139,7 +139,7 @@ public class CustomRebalancer extends AbstractRebalancer<ResourceControllerDataP
       // Note: if instance is not live, the mapping for that instance will not show up in
       // BestPossibleMapping (and ExternalView)
       // if instance is evacuated keep the instanceStateMap same as idealStateMap
-      if ((assignableLiveInstancesMap.containsKey(instance) || isAssignableForCustomizedResource)) {
+      if (assignableLiveInstancesMap.containsKey(instance) || isAssignableForCustomizedResource) {
         if (enabled) {
           instanceStateMap.put(instance, idealStateMap.get(instance));
         } else {

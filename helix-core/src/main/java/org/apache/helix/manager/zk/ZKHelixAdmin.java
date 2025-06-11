@@ -802,7 +802,7 @@ public class ZKHelixAdmin implements HelixAdmin {
 
     List<IdealState> idealStates = accessor.getChildValues(keyBuilder.idealStates(), true);
     if (liveInstance == null) {
-      return !areResourcesMigrated(currentStates, idealStates, instanceName, RebalanceMode.CUSTOMIZED);
+      return !areAllPartitionsReassigned(currentStates, idealStates, instanceName, RebalanceMode.CUSTOMIZED);
     }
 
     // see if instance has pending message.
@@ -821,15 +821,17 @@ public class ZKHelixAdmin implements HelixAdmin {
   }
 
   /**
-   * Return true if all the partitions of the resources which match RebalanceMode state are now assigned
-   * to a different instance in ideal state.
-   * @param currentStates
-   * @param idealStates
-   * @param instanceName
-   * @param rebalanceMode
+   * Returns true if, for all resources present in the given current states and whose
+   * RebalanceMode matches the specified {@link  RebalanceMode}, every partition is now assigned
+   * to a different instance (i.e., not instanceName) in the IdealState.
+   *
+   * @param currentStates  list of CurrentState objects representing the current assignment of resources
+   * @param idealStates    list of IdealState objects representing the desired assignment of resources
+   * @param instanceName   the instance from which resources are migrated
+   * @param rebalanceMode  the rebalance mode to match in IdealState
    * @return
    */
-  private boolean areResourcesMigrated(List<CurrentState> currentStates,
+  private boolean areAllPartitionsReassigned(List<CurrentState> currentStates,
       List<IdealState> idealStates, String instanceName, RebalanceMode rebalanceMode) {
     // Step 1: Create a map of resourceName -> CurrentState
     Map<String, CurrentState> currentStateMap = currentStates.stream()
