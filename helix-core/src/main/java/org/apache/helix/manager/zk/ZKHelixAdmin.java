@@ -802,7 +802,11 @@ public class ZKHelixAdmin implements HelixAdmin {
 
     List<IdealState> idealStates = accessor.getChildValues(keyBuilder.idealStates(), true);
     if (liveInstance == null) {
-      return !areAllPartitionsReassigned(currentStates, idealStates, instanceName, RebalanceMode.CUSTOMIZED);
+      boolean customizedResourcesReassigned =
+          areAllCustomizedResourcesReassigned(currentStates, idealStates, instanceName);
+      logger.info("check for customizedResourcesReassigned for instance {} in cluster {} returned {}",
+          instanceName, clusterName, customizedResourcesReassigned);
+      return !customizedResourcesReassigned;
     }
 
     // see if instance has pending message.
@@ -821,26 +825,24 @@ public class ZKHelixAdmin implements HelixAdmin {
   }
 
   /**
-   * Returns true if, for all resources present in the given current states and whose
-   * RebalanceMode matches the specified {@link  RebalanceMode}, every partition is now assigned
+   * Returns true if, for all customized resources present in the given current states every partition is now assigned
    * to a different instance (i.e., not instanceName) in the IdealState.
    *
    * @param currentStates  list of CurrentState objects of instanceName representing the current assignment of
    *                       resources on the instance
    * @param idealStates    list of IdealState objects representing the desired assignment of resources
    * @param instanceName   the instance from which resources are migrated
-   * @param rebalanceMode  the rebalance mode to match in IdealState
    * @return
    */
-  private boolean areAllPartitionsReassigned(List<CurrentState> currentStates,
-      List<IdealState> idealStates, String instanceName, RebalanceMode rebalanceMode) {
+  private boolean areAllCustomizedResourcesReassigned(List<CurrentState> currentStates,
+      List<IdealState> idealStates, String instanceName) {
     // Step 1: Create a map of resourceName -> CurrentState
     Map<String, CurrentState> currentStateMap = currentStates.stream()
         .collect(Collectors.toMap(CurrentState::getResourceName, cs -> cs));
 
     // Step 2: Filter ideal states that are CUSTOMIZED and present in currentStates
     List<IdealState> customizedIdealStates = idealStates.stream()
-        .filter(is -> is.getRebalanceMode() == rebalanceMode &&
+        .filter(is -> is.getRebalanceMode() == RebalanceMode.CUSTOMIZED &&
             currentStateMap.containsKey(is.getResourceName()))
         .collect(Collectors.toList());
 
@@ -862,7 +864,6 @@ public class ZKHelixAdmin implements HelixAdmin {
         }
       }
     }
-
     return true; // All customized resource partitions have been migrated off this instance
   }
 
