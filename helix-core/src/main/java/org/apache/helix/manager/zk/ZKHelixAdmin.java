@@ -762,9 +762,10 @@ public class ZKHelixAdmin implements HelixAdmin {
   }
 
   /**
-   * Return true if instance has any resource with FULL_AUTO or CUSTOMIZED rebalance mode in current state or
-   * if instance has any pending message. Otherwise, return false if instance is offline,
-   * instance has no active session, or if instance is online but has no current state or pending message.
+   * Returns true if instance has more than one session or for online instance if it has messages or
+   * FULL_AUTO and CUSTOMIZED resources in current states, false otherwise. For offline instances,
+   * returns false if all CUSTOMIZED resources in current states are migrated to other instances
+   * in ideal state, true otherwise.
    * @param clusterName
    * @param instanceName
    * @return
@@ -782,12 +783,12 @@ public class ZKHelixAdmin implements HelixAdmin {
     // then there are > 1 session ZNodes.
     List<String> sessions = baseAccessor.getChildNames(PropertyPathBuilder.instanceCurrentState(clusterName, instanceName), 0);
     if (sessions.isEmpty()) {
-      logger.warn("Instance {} in cluster {} does not have any session.  The instance can be removed anyway.",
+      logger.info("Instance {} in cluster {} does not have any session.  The instance can be removed anyway.",
           instanceName, clusterName);
       return false;
     }
     if (sessions.size() > 1) {
-      logger.warn("Instance {} in cluster {} is carrying over from prev session.", instanceName,
+      logger.info("Instance {} in cluster {} is carrying over from prev session.", instanceName,
           clusterName);
       return true;
     }
@@ -795,7 +796,7 @@ public class ZKHelixAdmin implements HelixAdmin {
     String sessionId = sessions.get(0);
     List<CurrentState> currentStates = accessor.getChildValues(keyBuilder.currentStates(instanceName, sessionId), true);
     if (currentStates == null || currentStates.isEmpty()) {
-      logger.warn("Instance {} in cluster {} does not have any current state.",
+      logger.info("Instance {} in cluster {} does not have any current state.",
           instanceName, clusterName);
       return false;
     }
@@ -812,7 +813,7 @@ public class ZKHelixAdmin implements HelixAdmin {
     // see if instance has pending message.
     List<String> messages = accessor.getChildNames(keyBuilder.messages(instanceName));
     if (messages != null && !messages.isEmpty()) {
-      logger.warn("Instance {} in cluster {} has pending messages.", instanceName, clusterName);
+      logger.info("Instance {} in cluster {} has pending messages.", instanceName, clusterName);
       return true;
     }
     // Get set of FULL_AUTO and CUSTOMIZED resources
